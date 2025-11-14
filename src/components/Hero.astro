@@ -1,0 +1,35 @@
+---
+import heroImage from "../assets/hero_image.png";
+import { Image } from "astro:assets";
+---
+
+<!-- <div class="h-lvh">
+    <div class="h-full grid grid-cols-2">
+        <div class="flex justify-center items-center">
+            <Image src={heroImage} alt={"arst"} />
+        </div>
+    </div>
+</div> -->
+<div class="md:mt-8 grid grid-cols-1 md:grid-cols-2">
+  <header class="flex items-center md:mr-12">
+    <div>
+      <h1 class="text-4xl font-semibold pb-8">
+        Välkommen till
+
+        <span class="text-cyan-500 font-extrabold text-6xl font-display">
+          remkungen
+        </span>
+        <!-- Vi säljer&nbsp;<em class="not-italic underline">remmar</em> -->
+      </h1>
+      <p class="text-xl leading-[150%]">
+        Vi specialiserar oss på godisförsäljning vid event. Vår vision är att
+        göra varje plats där Remkungen medverkar lite festligare. Inget event är
+        för litet eller för stor för oss. Vi har erfarenheter av allt från stora
+        festivaler till små föreningstävlningar.
+      </p>
+    </div>
+  </header>
+  <aside>
+    <Image src={heroImage} alt="Remmar" />
+  </aside>
+</div>
