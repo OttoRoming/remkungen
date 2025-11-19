@@ -9,25 +9,49 @@ import { Icon } from "astro-icon/components";
 
 <Layout>
   <Hero />
-  <div class="flex justify-center pt-4 pb-8">
-    <a
+  <div class="flex justify-center pt-4 pb-12">
+    <!-- <a
       class="text-gray-50 font-semibold text-2xl pt-2 pb-3 px-6 rounded-full bg-cyan-500"
       href="#content"
     >
       Läs mer om oss
-    </a>
+    </a> -->
   </div>
-  <div id="content" class="flex flex-col lg:grid grid-cols-2 gap-6">
-    <div class="text-xl leading-[150%]">
+  <!-- <div id="content" class="flex flex-col lg:grid grid-cols-1 gap-6"> -->
+  <div class="flex flex-col justify-center items-center lg:px-40">
+    <h2 class="text-6xl bold text-cyan-500 font-display font-bold pb-16">
+      Om oss
+    </h2>
+    <div class="text-xl leading-[150%] pb-16">
       Våra kunder uppskattar kombinationen av festlighetskäsnlan som vi tillför
       och att lättare kunna finansiera evenemanget då vi betalar en andel av vår
       försäljning för platsen. (procentsats englit överenskommelse)
     </div>
-    <div></div>
-    <div></div>
-    <div class="text-xl leading-[150%]">
+    <div class="text-xl leading-[150%] pb-16">
       Om du tror att vi kan förgylla ditt evenemang tveka inte att höra av dig
       till oss så återkommer vi med information!
     </div>
+    <hr class="w-full opacity-20 pb-16" />
+    <h2 class="text-6xl bold text-cyan-500 font-display font-bold pb-16">
+      Kontakt
+    </h2>
+    <div class="text-xl leading-[150%] pb-8">
+      Du är välkommen att kontakta oss via mail eller telefon!
+    </div>
+    <h3 class="text-4xl bold text-cyan-500 font-display font-bold pb-8">
+      Mail
+    </h3>
+    <div class="text-xl leading-[150%] pb-8">
+      <a href="mailto:info@remkungen.se">info@remkungen.se</a>
+    </div>
+    <h3 class="text-4xl bold text-cyan-500 font-display font-bold pb-8">
+      Telefon
+    </h3>
+    <div class="text-xl leading-[150%] pb-8">
+      <code>076 793 33 66</code>
+    </div>
   </div>
+  <footer class="py-16"></footer>
+
+  <!-- </div> -->
 </Layout>
