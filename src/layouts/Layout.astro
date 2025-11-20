@@ -1,18 +1,60 @@
 ---
 import "../styles/global.css";
 import "@fontsource-variable/dosis";
+import background from "../assets/background.jpg";
+import image from "../assets/hero_image.png";
 ---
 
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro Basics</title>
+    <title>Remkungen</title>
+
+    <!-- SEO slop -->
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.remkungen.se/" />
+    <meta
+      name="description"
+      content="Välkommen till Remkungen! Vi specialiserar oss på godisförsäljning vid event. Vi gör varje plats festligare, oavsett om det handlar om stora festivaler eller små tävlingar."
+    />
+    <meta
+      name="keywords"
+      content="godisförsäljning, evenemang, festligheter, festivaler, Remkungen"
+    />
+
+    <!-- Open Graph Tags -->
+    <meta
+      property="og:title"
+      content="Remkungen - Godisförsäljning för alla typer av evenemang"
+    />
+    <meta
+      property="og:description"
+      content="Välkommen till Remkungen! Vi specialiserar oss på godisförsäljning vid event för att göra dem festligare."
+    />
+    <meta property="og:image" content={image.src} />
+
+    <!-- Twitter Card Tags -->
+    <meta
+      name="twitter:title"
+      content="Remkungen - Godisförsäljning för alla typer av evenemang"
+    />
+    <meta
+      name="twitter:description"
+      content="Välkommen till Remkungen! Vi specialiserar oss på godisförsäljning vid event för att göra dem festligare."
+    />
+    <meta name="twitter:image" content="URL_till_din_bild" />
   </head>
-  <body class="max-w-308 pt-16 md:pt-18 xl:pt-23 px-8 md:px-4 mx-auto">
-    <slot />
+  <body
+    class="bg-(image:--url) bg-cover bg-center"
+    style={`--url: url('${background.src}')`}
+  >
+    <div
+      class="max-w-308 pt-16 md:pt-18 xl:pt-23 px-8 mx-auto bg-white shadow-md"
+    >
+      <slot />
+    </div>
   </body>
 </html>
 
